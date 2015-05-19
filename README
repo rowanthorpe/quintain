@@ -1,0 +1,21 @@
+Quintain is primarily targeted at admins and maintainers whose main interaction
+with web-apps is rebasing local patches on upstream releases and revisions, and
+deploying to live servers in the least-invasive manner.
+
+This started life as a couple of highly case-specific scripts, which I have now
+rewritten in the hopes of it being useful as a more generic tool. This
+iteration is presently a "works for me" release:
+
+ 1. It's had very little testing since I abstracted and rewrote it for public
+    release, so there's bound to be at least 1 or 2 typos introduced somewhere
+ 2. It presently handles one use-case (git-based repos, debian-based servers)
+ 3. It is very under-documented
+
+Having said that, I successfully use the pre-rewrite versions of the two main
+scripts for regularly updating and live-deploying code to production & staging
+servers for a ~90MB public-facing web-platform, handling regular local and
+upstream code-changes from multiple participants.
+
+Please report bugs to:
+
+ https://github.com/rowanthorpe/quintain/issues
